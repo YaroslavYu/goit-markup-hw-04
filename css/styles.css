@@ -30,7 +30,7 @@ body {
     text-decoration: none;
 }
 
-.list {
+ul {
     list-style: none;
 }
 
@@ -161,8 +161,8 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/hero-background.jpg');
-    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-background.jpg');
+
 }
 
 .hero-header {
@@ -211,6 +211,13 @@ img {
     color: var(--headers-nav-text-color);
 }
 
+.icon-benefits {
+    display: block;
+   
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
 .headers-benefits {
     font-size: 14px;
     line-height: 1.14;
@@ -237,6 +244,16 @@ img {
 
 .benefits-item {
     width: calc((100% - 90px) / 4);
+    
+}
+
+.benefits-iconplace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+background-color: var(--buttons-portfolio-background-team-color);
+
 }
 
 /* section what we do */
@@ -278,9 +295,61 @@ img {
     margin-bottom: 10px;
 }
 
+.team-descr>p {
+    margin-bottom: 16px;
+}
+
+.list-socialnetw {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.link-socialnetwork {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-socialnetw {
+    width: 20px;
+    height: 20px;
+}
+
+
 .team .list {
     display: flex;
     column-gap: 30px;
+}
+
+/* OUR CLIENTS */
+
+.list-clients {
+    display: flex;
+    column-gap: 30px;
+}
+
+.link-clients {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+}
+
+.icon-clients {
+    width: 106px;
+    height: 60px;
 }
 
 /* FOOTER */
@@ -288,6 +357,11 @@ img {
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.page-footer>.container {
+    display: flex;
+    align-items: baseline;
 }
 
 .address,
@@ -316,6 +390,10 @@ img {
 
 .footer-list-item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.container-logo-address {
+    margin-right: 70px;
 }
 
 /* PORTFOLIO PAGE */
